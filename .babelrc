@@ -1,0 +1,6 @@
+{
+    "presets": [ 
+      [ "es2015",  {"modules": false }], //For tree-shaking to include only imported modules in the bundle.js
+      "react"
+    ]
+  }
