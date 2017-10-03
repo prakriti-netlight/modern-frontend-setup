@@ -987,11 +987,25 @@ var newWay = function newWay() {
     return '<h1>Hello Webpack</h1>' + nextWord;
 };
 
-//React Component
-var reactComponent = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+//Styling
+var codePubStyle = {
+    color: 'white',
+    backgroundColor: 'black'
+};
+
+var fancyStyle = {
+    padding: 10,
+    margin: 'auto',
+    backgroundColor: "#ffde00",
+    color: "#333",
+    fontFamily: "monospace",
+    fontSize: 32,
+    textAlign: "center"
+    //React Component
+};var reactComponent = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'h1',
-    null,
-    'Hello Codepub'
+    { style: codePubStyle },
+    'Welcome to Codepub'
 );
 
 var ReactListComponents = function (_React$Component) {
@@ -1008,11 +1022,11 @@ var ReactListComponents = function (_React$Component) {
         value: function render() {
             return [__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'h1',
-                { key: '1' },
+                { key: '1', style: codePubStyle },
                 'Hello Codepub'
             ), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'h2',
-                { key: '2' },
+                { key: '2', style: fancyStyle },
                 'Hello React!'
             )];
         }
