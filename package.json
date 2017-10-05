@@ -4,7 +4,7 @@
   "description": "\"Practice on setting up modern JS tools\"",
   "main": "index.js",
   "scripts": {
-    "start": "node node_modules/webpack/bin/webpack --watch",
+    "start": "node node_modules/webpack/bin/webpack --optimize-minimize --watch",
     "start:dev": "npm run start | node node_modules/.bin/webpack-dev-server",
     "build": "node node_modules/webpack/bin/webpack -p",
     "eslintStart": "node node_modules/.bin/eslint --init"

@@ -28,10 +28,7 @@ const config = {
                 ]
             }
         ]
-    },
-    plugins: [
-        new UglifyJSPlugin()
-    ]
+    }
 };
 
 module.exports = config;
