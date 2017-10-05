@@ -17,12 +17,13 @@ const fancyStyle = {
     textAlign: 'center'
 };
 
+export const unImported = 'I am unusable';
 
 //React Functional Component
-const reactComponent = (<h1 style={codePubStyle}>Welcome to Codepub!</h1>);
+export const MyFirstFunctionComponent = (<h1 style={codePubStyle}>Welcome to Codepub!</h1>);
 
 //React Class component
-export default class ReactListComponents extends React.Component {
+export class ReactListComponents extends React.Component {
     render() {
         return [
             <h1 key="1" style={fancyStyle}>Hello Codepub!</h1>,
